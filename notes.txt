@@ -1,0 +1,55 @@
+Step 1: 
+
+Scraping a web page
+Scrape iPhone 12 link: https://www.amazon.in/Apple-New-iPhone-12-128GB/dp/B08L5TNJHG/
+Scrape as many pages as possible and save all scraped data in the database. 
+Scrapping Details:
+ Review Title
+ Review of Text
+ Style Name(Storage size)
+ Colour
+ Verified Purchase 
+Using scraped text, find out the best & worst keywords.
+
+
+Step 2:
+Sentiment Analysis:
+Using the above-scraped data do sentiment analysis for it by using any existing python modules such as spacy, nltk, text blob, etc, or can create your own sentiment classifier as well. 
+
+
+Step 3:
+APIs:
+There are two APIs :
+
+Sentiment Analysis API:
+o Given a new review call the API and get sentiment for it.
+
+Review retrieval:
+o  Using color, storage size, and rating fetch all the reviews.  
+
+
+
+
+
+
+
+
+Thinking process,
+
+There are 3 tasks and first two deals with python and third deals with establishing APIs
+Best a way is to develop a Django application.
+1st step utilize a database, so for simplicity, we can use sqlite database. 
+
+Why Django?
+It is a python based web framework.
+establishing API will be easier.
+Using python based libraries for scraping and sentiment analysis will be much easier.
+
+
+
+Let start with making Django app.
+1. Create virtual environment 
+2. install Django
+3. Create review_analyser project
+4. create a new app reviewer
+5.

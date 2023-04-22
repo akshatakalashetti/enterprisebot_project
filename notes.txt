@@ -52,4 +52,6 @@ Let start with making Django app.
 2. install Django
 3. Create review_analyser project
 4. create a new app reviewer
-5.
+5. install sqlite3
+6. configure django to use sqlite3
+7. 

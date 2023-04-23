@@ -1,0 +1,186 @@
+(entpbot_venv) PS C:\Users\annar\OneDrive\Desktop\enterprisebot_project\review_analyser> python manage.py shell
+Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from reviewer.helper import *                                                                                                     >>> url = "https://www.amazon.in/New-Apple-iPhone-12-256GB/product-reviews/B0932RLX4G/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&pageNumber={pn}"
+>>> multiple_page_parser(url)
+
+DevTools listening on ws://127.0.0.1:51402/devtools/browser/f7e3413a-ef2c-4ccc-b219-f575b21bcf1f
+486216
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+461333
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+existing review Good
+Review added successfully.
+Review added successfully.
+459093
+existing review overall good only battery need to charge everyday
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+'NoneType' object has no attribute 'get_text'
+469925
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+459219
+Review added successfully.
+existing review Good product
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+existing review Satisfied
+Review added successfully.
+473286
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+463088
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+475831
+Review added successfully.
+Review added successfully.
+Review added successfully.
+'NoneType' object has no attribute 'get_text'
+474135
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+existing review Worthy Product
+Review added successfully.
+461695
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+479539
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+existing review Camera quality
+Review added successfully.
+Review added successfully.
+existing review Good and satisfactory upgrade for user having iphone series before 12
+Review added successfully.
+Review added successfully.
+463671
+existing review Good camera
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+'NoneType' object has no attribute 'get_text'
+479851
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+existing review Very good
+Review added successfully.
+454181
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+494845
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+'NoneType' object has no attribute 'get_text'
+462944
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+475649
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+Review added successfully.
+474598
+Review added successfully.

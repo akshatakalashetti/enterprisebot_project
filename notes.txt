@@ -29,11 +29,6 @@ o  Using color, storage size, and rating fetch all the reviews.
 
 
 
-
-
-
-
-
 Thinking process,
 
 There are 3 tasks and first two deals with python and third deals with establishing APIs
@@ -55,3 +50,7 @@ Let start with making Django app.
 5. install sqlite3
 6. configure django to use sqlite3
 7. install packages(bs4,requests)
+8. build review_parser to fetch required data
+9. adding/saving cookies to keep login automatically
+10. saving all data to the database
+11. downloading tableplus to check the outside of the database

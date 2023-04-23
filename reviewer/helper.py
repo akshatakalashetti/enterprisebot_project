@@ -4,6 +4,10 @@ from .models import Reviews
 import urllib.request
 from selenium import webdriver
 import time
+import spacy
+from textblob import TextBlob
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
 
 url_red_64 =        "https://www.amazon.in/New-Apple-iPhone-12-64GB/product-reviews/B08L5TGWD1/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&pageNumber={pn}&formatType=current_format"
 url_purple_256 =    "https://www.amazon.in/New-Apple-iPhone-12-256GB/product-reviews/B0932RLX4G/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&formatType=current_format&pageNumber={pn}"
@@ -82,3 +86,37 @@ def review_parser(html_text):
         except Exception as e:
             print("error")
             
+
+def sentiment_analyser(review_text):
+
+    blob = TextBlob(review_text)
+    textblob_polarity = blob.sentiment.polarity
+
+    nltk_analyzer = SentimentIntensityAnalyzer()
+    nltk_scores = nltk_analyzer.polarity_scores(review_text)
+    nltk_polarity = nltk_scores["compound"]
+
+    # Calculate average sentiment score
+    average_polarity = (textblob_polarity + nltk_polarity ) / 2
+
+    if average_polarity < 0:
+        sentiment = "bad"
+    if average_polarity < -0.5:
+        sentiment = "worst"
+    if average_polarity == 0:
+        sentiment = "Neutral"
+    if average_polarity > 0:
+        sentiment = "good"
+    if average_polarity > 0.5:
+        sentiment = "best"
+
+    return (sentiment, average_polarity)
+
+
+def sentiment_updater():
+    for review in Reviews.objects.all():
+        sentiment, avg_polarity = sentiment_analyser(review.title+" "+review.review_body)
+        review.sentiment = sentiment
+        review.polarity_score = avg_polarity
+        review.save()
+        

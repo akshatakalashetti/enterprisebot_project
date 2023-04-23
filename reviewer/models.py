@@ -7,4 +7,5 @@ class Reviews(models.Model):
     size = models.CharField(max_length=255)
     color = models.CharField(max_length=255)
     is_verified_purchase = models.BooleanField(default=False)
-    best_or_worst = models.TextField()
+    sentiment = models.TextField(default='neutral', blank=True)
+    polarity_score = models.FloatField(default=0.0)
